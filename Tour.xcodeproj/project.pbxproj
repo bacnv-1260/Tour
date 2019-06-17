@@ -9,8 +9,13 @@
 /* Begin PBXBuildFile section */
 		12AC2B0164DF219C04639680 /* Pods_Tour.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 91BC645131F4EFBB1286A093 /* Pods_Tour.framework */; };
 		A4B2307022A8C541008F16A7 /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = A4B2306F22A8C541008F16A7 /* GoogleService-Info.plist */; };
+		DB9B5D3122B729C500441878 /* Home.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = DB9B5D3022B729C500441878 /* Home.storyboard */; };
+		DB9B5D3522B72A1900441878 /* HomeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = DB9B5D3422B72A1900441878 /* HomeViewController.swift */; };
+		DB9B5D3722B72F3D00441878 /* TripTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = DB9B5D3622B72F3D00441878 /* TripTableViewCell.swift */; };
+		DB9B5D3B22B7359300441878 /* Trip.swift in Sources */ = {isa = PBXBuildFile; fileRef = DB9B5D3A22B7359300441878 /* Trip.swift */; };
+		DB9B5D4122B768CF00441878 /* StringExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = DB9B5D4022B768CF00441878 /* StringExtension.swift */; };
 		FD5C7D2022A52DEA00534FCF /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = FD5C7D1F22A52DEA00534FCF /* AppDelegate.swift */; };
-		FD5C7D2222A52DEA00534FCF /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FD5C7D2122A52DEA00534FCF /* ViewController.swift */; };
+		FD5C7D2222A52DEA00534FCF /* LoginViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FD5C7D2122A52DEA00534FCF /* LoginViewController.swift */; };
 		FD5C7D2522A52DEA00534FCF /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = FD5C7D2322A52DEA00534FCF /* Main.storyboard */; };
 		FD5C7D2722A52DED00534FCF /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = FD5C7D2622A52DED00534FCF /* Assets.xcassets */; };
 		FD5C7D2A22A52DED00534FCF /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = FD5C7D2822A52DED00534FCF /* LaunchScreen.storyboard */; };
@@ -27,9 +32,14 @@
 		A4B2307322A8F74E008F16A7 /* FBSDKLoginKit.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; path = FBSDKLoginKit.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		A4B2307522A8F74E008F16A7 /* FBSDKShareKit.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; path = FBSDKShareKit.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		AE57CFCF29AF3F1D5CBF82E8 /* Pods-Tour.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Tour.release.xcconfig"; path = "Target Support Files/Pods-Tour/Pods-Tour.release.xcconfig"; sourceTree = "<group>"; };
+		DB9B5D3022B729C500441878 /* Home.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = Home.storyboard; sourceTree = "<group>"; };
+		DB9B5D3422B72A1900441878 /* HomeViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeViewController.swift; sourceTree = "<group>"; };
+		DB9B5D3622B72F3D00441878 /* TripTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TripTableViewCell.swift; sourceTree = "<group>"; };
+		DB9B5D3A22B7359300441878 /* Trip.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Trip.swift; sourceTree = "<group>"; };
+		DB9B5D4022B768CF00441878 /* StringExtension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StringExtension.swift; sourceTree = "<group>"; };
 		FD5C7D1C22A52DEA00534FCF /* Tour.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Tour.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		FD5C7D1F22A52DEA00534FCF /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		FD5C7D2122A52DEA00534FCF /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		FD5C7D2122A52DEA00534FCF /* LoginViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginViewController.swift; sourceTree = "<group>"; };
 		FD5C7D2422A52DEA00534FCF /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		FD5C7D2622A52DED00534FCF /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		FD5C7D2922A52DED00534FCF /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
@@ -71,6 +81,41 @@
 			path = Pods;
 			sourceTree = "<group>";
 		};
+		DB9B5D3C22B7643300441878 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				DB9B5D3A22B7359300441878 /* Trip.swift */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		DB9B5D3D22B7644500441878 /* View */ = {
+			isa = PBXGroup;
+			children = (
+				DB9B5D3622B72F3D00441878 /* TripTableViewCell.swift */,
+				DB9B5D3022B729C500441878 /* Home.storyboard */,
+				FD5C7D2322A52DEA00534FCF /* Main.storyboard */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		DB9B5D3E22B7645000441878 /* Controller */ = {
+			isa = PBXGroup;
+			children = (
+				FD5C7D2122A52DEA00534FCF /* LoginViewController.swift */,
+				DB9B5D3422B72A1900441878 /* HomeViewController.swift */,
+			);
+			path = Controller;
+			sourceTree = "<group>";
+		};
+		DB9B5D3F22B768B900441878 /* Utils */ = {
+			isa = PBXGroup;
+			children = (
+				DB9B5D4022B768CF00441878 /* StringExtension.swift */,
+			);
+			path = Utils;
+			sourceTree = "<group>";
+		};
 		FD5C7D1322A52DE900534FCF = {
 			isa = PBXGroup;
 			children = (
@@ -92,10 +137,12 @@
 		FD5C7D1E22A52DEA00534FCF /* Tour */ = {
 			isa = PBXGroup;
 			children = (
+				DB9B5D3F22B768B900441878 /* Utils */,
+				DB9B5D3E22B7645000441878 /* Controller */,
+				DB9B5D3D22B7644500441878 /* View */,
+				DB9B5D3C22B7643300441878 /* Model */,
 				A4B2306F22A8C541008F16A7 /* GoogleService-Info.plist */,
 				FD5C7D1F22A52DEA00534FCF /* AppDelegate.swift */,
-				FD5C7D2122A52DEA00534FCF /* ViewController.swift */,
-				FD5C7D2322A52DEA00534FCF /* Main.storyboard */,
 				FD5C7D2622A52DED00534FCF /* Assets.xcassets */,
 				FD5C7D2822A52DED00534FCF /* LaunchScreen.storyboard */,
 				FD5C7D2B22A52DED00534FCF /* Info.plist */,
@@ -164,6 +211,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				FD5C7D2A22A52DED00534FCF /* LaunchScreen.storyboard in Resources */,
+				DB9B5D3122B729C500441878 /* Home.storyboard in Resources */,
 				A4B2307022A8C541008F16A7 /* GoogleService-Info.plist in Resources */,
 				FD5C7D2722A52DED00534FCF /* Assets.xcassets in Resources */,
 				FD5C7D2522A52DEA00534FCF /* Main.storyboard in Resources */,
@@ -219,8 +267,12 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				FD5C7D2222A52DEA00534FCF /* ViewController.swift in Sources */,
+				DB9B5D3B22B7359300441878 /* Trip.swift in Sources */,
+				DB9B5D4122B768CF00441878 /* StringExtension.swift in Sources */,
+				DB9B5D3722B72F3D00441878 /* TripTableViewCell.swift in Sources */,
+				FD5C7D2222A52DEA00534FCF /* LoginViewController.swift in Sources */,
 				FD5C7D2022A52DEA00534FCF /* AppDelegate.swift in Sources */,
+				DB9B5D3522B72A1900441878 /* HomeViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

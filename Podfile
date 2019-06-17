@@ -10,7 +10,8 @@ target 'Tour' do
   pod 'Firebase/Auth'
   
   pod 'FBSDKLoginKit'
-  
+  pod 'Kingfisher'
+
   # Pods for Tour
 
 end

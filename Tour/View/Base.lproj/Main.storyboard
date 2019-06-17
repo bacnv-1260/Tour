@@ -1,0 +1,76 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="14313.18" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14283.14"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--Login View Controller-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <viewController id="BYZ-38-t0r" customClass="LoginViewController" customModule="Tour" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="login-screen-background" translatesAutoresizingMaskIntoConstraints="NO" id="4RI-EZ-yPJ">
+                                <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                            </imageView>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="GYX-Mv-JxS">
+                                <rect key="frame" x="15" y="567" width="345" height="50"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="50" id="Mvd-eb-f24"/>
+                                </constraints>
+                                <state key="normal" backgroundImage="login-screen-facebook-button-login"/>
+                                <connections>
+                                    <action selector="onLoginFb:" destination="BYZ-38-t0r" eventType="touchUpInside" id="n8L-f8-i5h"/>
+                                </connections>
+                            </button>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="login-screen-slogan" translatesAutoresizingMaskIntoConstraints="NO" id="3gK-Ea-cHf">
+                                <rect key="frame" x="20" y="260.5" width="335" height="146"/>
+                            </imageView>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="login-screen-logo" translatesAutoresizingMaskIntoConstraints="NO" id="5rl-77-nSw">
+                                <rect key="frame" x="120" y="75" width="135" height="130.5"/>
+                            </imageView>
+                        </subviews>
+                        <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <constraints>
+                            <constraint firstItem="GYX-Mv-JxS" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="15" id="F8T-GO-ytU"/>
+                            <constraint firstItem="4RI-EZ-yPJ" firstAttribute="bottom" secondItem="6Tk-OE-BBY" secondAttribute="bottom" id="FVi-zN-qul"/>
+                            <constraint firstAttribute="trailing" secondItem="3gK-Ea-cHf" secondAttribute="trailing" constant="20" id="GCE-pd-V10"/>
+                            <constraint firstItem="3gK-Ea-cHf" firstAttribute="top" secondItem="5rl-77-nSw" secondAttribute="bottom" constant="55" id="Gf8-an-pED"/>
+                            <constraint firstItem="3gK-Ea-cHf" firstAttribute="centerY" secondItem="8bC-Xf-vdC" secondAttribute="centerY" id="Igx-8P-fKf"/>
+                            <constraint firstItem="4RI-EZ-yPJ" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" id="LMb-3O-kJ7"/>
+                            <constraint firstItem="4RI-EZ-yPJ" firstAttribute="top" secondItem="8bC-Xf-vdC" secondAttribute="top" id="OUi-eq-JFi"/>
+                            <constraint firstItem="3gK-Ea-cHf" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="R1o-qe-UR4"/>
+                            <constraint firstItem="4RI-EZ-yPJ" firstAttribute="trailing" secondItem="6Tk-OE-BBY" secondAttribute="trailing" id="Rkr-vJ-hGd"/>
+                            <constraint firstItem="5rl-77-nSw" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="55" id="XAs-KD-IoX"/>
+                            <constraint firstItem="3gK-Ea-cHf" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="20" id="hiq-Th-IEK"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="bottom" secondItem="GYX-Mv-JxS" secondAttribute="bottom" constant="50" id="jWb-NM-mJQ"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="GYX-Mv-JxS" secondAttribute="trailing" constant="15" id="qgw-c3-zHT"/>
+                            <constraint firstItem="5rl-77-nSw" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="120" id="sGS-BN-m8J"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="5rl-77-nSw" secondAttribute="trailing" constant="120" id="spk-Tw-c53"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
+                    </view>
+                    <connections>
+                        <outlet property="btnLoginFb" destination="GYX-Mv-JxS" id="mQb-dI-JEN"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="53.600000000000001" y="26.53673163418291"/>
+        </scene>
+    </scenes>
+    <resources>
+        <image name="login-screen-background" width="750" height="1334"/>
+        <image name="login-screen-facebook-button-login" width="560" height="90"/>
+        <image name="login-screen-logo" width="292" height="293"/>
+        <image name="login-screen-slogan" width="393" height="146"/>
+    </resources>
+</document>
