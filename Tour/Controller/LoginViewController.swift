@@ -10,7 +10,7 @@ import UIKit
 import Firebase
 import FBSDKLoginKit
 
-class ViewController: UIViewController {
+class LoginViewController: UIViewController {
     
     
     @IBOutlet weak var btnLoginFb: UIButton!
@@ -47,6 +47,7 @@ class ViewController: UIViewController {
                     self.showAlert(message: "Login error: \(error.localizedDescription)")
                     return
                 }
+               
             }
         }
     }
@@ -66,7 +67,14 @@ class ViewController: UIViewController {
                                       preferredStyle: .alert);
         alert.view.backgroundColor = UIColor.white
         alert.view.layer.cornerRadius = 10
-        alert.addAction(UIAlertAction(title: "Thêm ngay", style: .cancel, handler: nil))
+        
+        alert.addAction(UIAlertAction.init(title: "Thêm ngay", style: .default) { (alert) in
+            let homeStoryboard = UIStoryboard.init(name: "Home", bundle: nil)
+            let homeViewController = homeStoryboard.instantiateViewController(withIdentifier: "HomeViewController") as! HomeViewController
+            let appdelegate = UIApplication.shared.delegate as! AppDelegate
+            appdelegate.window!.rootViewController = homeViewController
+        
+        })
         alert.addAction(UIAlertAction(title: "Thêm sau", style: .default, handler: nil))
         self.present(alert, animated: true)
     }
