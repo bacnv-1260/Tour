@@ -70,7 +70,7 @@ class LoginViewController: UIViewController {
         
         alert.addAction(UIAlertAction.init(title: "Thêm ngay", style: .default) { (alert) in
             let homeStoryboard = UIStoryboard.init(name: "Home", bundle: nil)
-            let homeViewController = homeStoryboard.instantiateViewController(withIdentifier: "HomeViewController") as! HomeViewController
+            let homeViewController = homeStoryboard.instantiateViewController(withIdentifier: "TabbarViewController") as! TabbarViewController
             let appdelegate = UIApplication.shared.delegate as! AppDelegate
             appdelegate.window!.rootViewController = homeViewController
         

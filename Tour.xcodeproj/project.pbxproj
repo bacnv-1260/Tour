@@ -8,7 +8,14 @@
 
 /* Begin PBXBuildFile section */
 		12AC2B0164DF219C04639680 /* Pods_Tour.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 91BC645131F4EFBB1286A093 /* Pods_Tour.framework */; };
+		A4717C4D22BB9F7100DEDECA /* TabbarViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A4717C4C22BB9F7100DEDECA /* TabbarViewController.swift */; };
+		A4717C4F22BBACC500DEDECA /* InboxViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A4717C4E22BBACC500DEDECA /* InboxViewController.swift */; };
+		A4717C5122BBACD500DEDECA /* TripsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A4717C5022BBACD500DEDECA /* TripsViewController.swift */; };
+		A4717C5322BBACE400DEDECA /* NotificationViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A4717C5222BBACE400DEDECA /* NotificationViewController.swift */; };
+		A4717C5522BBACF100DEDECA /* ProfileViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A4717C5422BBACF100DEDECA /* ProfileViewController.swift */; };
 		A4B2307022A8C541008F16A7 /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = A4B2306F22A8C541008F16A7 /* GoogleService-Info.plist */; };
+		A4F0F4D522BC8C0E0089A38D /* DetailTripTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = A4F0F4D422BC8C0E0089A38D /* DetailTripTableViewCell.swift */; };
+		A4F0F4D722BC90810089A38D /* TripDetail.swift in Sources */ = {isa = PBXBuildFile; fileRef = A4F0F4D622BC90810089A38D /* TripDetail.swift */; };
 		DB9B5D3122B729C500441878 /* Home.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = DB9B5D3022B729C500441878 /* Home.storyboard */; };
 		DB9B5D3522B72A1900441878 /* HomeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = DB9B5D3422B72A1900441878 /* HomeViewController.swift */; };
 		DB9B5D3722B72F3D00441878 /* TripTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = DB9B5D3622B72F3D00441878 /* TripTableViewCell.swift */; };
@@ -27,10 +34,17 @@
 		A40D583922A8FD67006D8683 /* FacebookCore.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; path = FacebookCore.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		A40D583B22A8FD67006D8683 /* FacebookLogin.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; path = FacebookLogin.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		A40D583D22A8FD6D006D8683 /* FacebookShare.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; path = FacebookShare.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		A4717C4C22BB9F7100DEDECA /* TabbarViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TabbarViewController.swift; sourceTree = "<group>"; };
+		A4717C4E22BBACC500DEDECA /* InboxViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = InboxViewController.swift; sourceTree = "<group>"; };
+		A4717C5022BBACD500DEDECA /* TripsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TripsViewController.swift; sourceTree = "<group>"; };
+		A4717C5222BBACE400DEDECA /* NotificationViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NotificationViewController.swift; sourceTree = "<group>"; };
+		A4717C5422BBACF100DEDECA /* ProfileViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProfileViewController.swift; sourceTree = "<group>"; };
 		A4B2306F22A8C541008F16A7 /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
 		A4B2307122A8F74E008F16A7 /* FBSDKCoreKit.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; path = FBSDKCoreKit.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		A4B2307322A8F74E008F16A7 /* FBSDKLoginKit.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; path = FBSDKLoginKit.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		A4B2307522A8F74E008F16A7 /* FBSDKShareKit.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; path = FBSDKShareKit.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		A4F0F4D422BC8C0E0089A38D /* DetailTripTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DetailTripTableViewCell.swift; sourceTree = "<group>"; };
+		A4F0F4D622BC90810089A38D /* TripDetail.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TripDetail.swift; sourceTree = "<group>"; };
 		AE57CFCF29AF3F1D5CBF82E8 /* Pods-Tour.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Tour.release.xcconfig"; path = "Target Support Files/Pods-Tour/Pods-Tour.release.xcconfig"; sourceTree = "<group>"; };
 		DB9B5D3022B729C500441878 /* Home.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = Home.storyboard; sourceTree = "<group>"; };
 		DB9B5D3422B72A1900441878 /* HomeViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeViewController.swift; sourceTree = "<group>"; };
@@ -81,10 +95,64 @@
 			path = Pods;
 			sourceTree = "<group>";
 		};
+		A4717C4B22BB9E3900DEDECA /* tabbar */ = {
+			isa = PBXGroup;
+			children = (
+				A4717C4C22BB9F7100DEDECA /* TabbarViewController.swift */,
+				A4717C5A22BBAD3900DEDECA /* profile */,
+				A4717C5922BBAD3100DEDECA /* notification */,
+				A4717C5822BBAD2C00DEDECA /* trips */,
+				A4717C5722BBAD1D00DEDECA /* inbox */,
+				A4717C5622BBACFD00DEDECA /* home */,
+			);
+			path = tabbar;
+			sourceTree = "<group>";
+		};
+		A4717C5622BBACFD00DEDECA /* home */ = {
+			isa = PBXGroup;
+			children = (
+				DB9B5D3422B72A1900441878 /* HomeViewController.swift */,
+			);
+			path = home;
+			sourceTree = "<group>";
+		};
+		A4717C5722BBAD1D00DEDECA /* inbox */ = {
+			isa = PBXGroup;
+			children = (
+				A4717C4E22BBACC500DEDECA /* InboxViewController.swift */,
+			);
+			path = inbox;
+			sourceTree = "<group>";
+		};
+		A4717C5822BBAD2C00DEDECA /* trips */ = {
+			isa = PBXGroup;
+			children = (
+				A4717C5022BBACD500DEDECA /* TripsViewController.swift */,
+			);
+			path = trips;
+			sourceTree = "<group>";
+		};
+		A4717C5922BBAD3100DEDECA /* notification */ = {
+			isa = PBXGroup;
+			children = (
+				A4717C5222BBACE400DEDECA /* NotificationViewController.swift */,
+			);
+			path = notification;
+			sourceTree = "<group>";
+		};
+		A4717C5A22BBAD3900DEDECA /* profile */ = {
+			isa = PBXGroup;
+			children = (
+				A4717C5422BBACF100DEDECA /* ProfileViewController.swift */,
+			);
+			path = profile;
+			sourceTree = "<group>";
+		};
 		DB9B5D3C22B7643300441878 /* Model */ = {
 			isa = PBXGroup;
 			children = (
 				DB9B5D3A22B7359300441878 /* Trip.swift */,
+				A4F0F4D622BC90810089A38D /* TripDetail.swift */,
 			);
 			path = Model;
 			sourceTree = "<group>";
@@ -95,6 +163,7 @@
 				DB9B5D3622B72F3D00441878 /* TripTableViewCell.swift */,
 				DB9B5D3022B729C500441878 /* Home.storyboard */,
 				FD5C7D2322A52DEA00534FCF /* Main.storyboard */,
+				A4F0F4D422BC8C0E0089A38D /* DetailTripTableViewCell.swift */,
 			);
 			path = View;
 			sourceTree = "<group>";
@@ -102,8 +171,8 @@
 		DB9B5D3E22B7645000441878 /* Controller */ = {
 			isa = PBXGroup;
 			children = (
+				A4717C4B22BB9E3900DEDECA /* tabbar */,
 				FD5C7D2122A52DEA00534FCF /* LoginViewController.swift */,
-				DB9B5D3422B72A1900441878 /* HomeViewController.swift */,
 			);
 			path = Controller;
 			sourceTree = "<group>";
@@ -267,9 +336,16 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				A4717C5322BBACE400DEDECA /* NotificationViewController.swift in Sources */,
+				A4F0F4D522BC8C0E0089A38D /* DetailTripTableViewCell.swift in Sources */,
 				DB9B5D3B22B7359300441878 /* Trip.swift in Sources */,
 				DB9B5D4122B768CF00441878 /* StringExtension.swift in Sources */,
+				A4717C4D22BB9F7100DEDECA /* TabbarViewController.swift in Sources */,
+				A4717C5122BBACD500DEDECA /* TripsViewController.swift in Sources */,
+				A4717C4F22BBACC500DEDECA /* InboxViewController.swift in Sources */,
+				A4717C5522BBACF100DEDECA /* ProfileViewController.swift in Sources */,
 				DB9B5D3722B72F3D00441878 /* TripTableViewCell.swift in Sources */,
+				A4F0F4D722BC90810089A38D /* TripDetail.swift in Sources */,
 				FD5C7D2222A52DEA00534FCF /* LoginViewController.swift in Sources */,
 				FD5C7D2022A52DEA00534FCF /* AppDelegate.swift in Sources */,
 				DB9B5D3522B72A1900441878 /* HomeViewController.swift in Sources */,

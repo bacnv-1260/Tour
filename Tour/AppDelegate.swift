@@ -9,11 +9,14 @@
 import UIKit
 import Firebase
 import FBSDKCoreKit
+import FBSDKLoginKit
 
 @UIApplicationMain
 class AppDelegate: UIResponder, UIApplicationDelegate {
     
     var window: UIWindow?
+    
+    
     
     func application(_ application: UIApplication, didFinishLaunchingWithOptions launchOptions: [UIApplication.LaunchOptionsKey: Any]?) -> Bool {
         // Override point for customization after application launch.
@@ -21,6 +24,16 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
         FBSDKApplicationDelegate
             .sharedInstance()
             .application(application, didFinishLaunchingWithOptions: launchOptions)
+        
+        if FBSDKAccessToken.current() != nil {
+            self.window = UIWindow(frame: UIScreen.main.bounds)
+            let storyboard = UIStoryboard(name: "Home", bundle: nil)
+            let initialViewController = storyboard.instantiateViewController(withIdentifier: "TabbarViewController") as! TabbarViewController
+            
+            self.window?.rootViewController = initialViewController
+            self.window?.makeKeyAndVisible()
+            
+        }
         return true
     }
     
