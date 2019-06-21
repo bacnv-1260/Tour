@@ -24,6 +24,16 @@ class HomeViewController: UIViewController {
         retrieveTrips()
     }
     
+    override func viewWillAppear(_ animated: Bool) {
+        super.viewWillAppear(animated)
+        navigationController?.setNavigationBarHidden(true, animated: animated)
+    }
+    
+    override func viewWillDisappear(_ animated: Bool) {
+        super.viewWillDisappear(animated)
+        navigationController?.setNavigationBarHidden(false, animated: animated)
+    }
+    
     let ref = Database.database().reference()
     
     func retrieveTrips(){
@@ -79,9 +89,24 @@ extension HomeViewController: UITableViewDelegate, UITableViewDataSource {
                 .cacheOriginalImage
             ])
         
-        
         return cell
     }
     
+    func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
+        self.tabBarController?.selectedIndex = 2
+        
+//        let homeStoryboard = UIStoryboard.init(name: "Home", bundle: nil)
+//        let homeViewController = homeStoryboard.instantiateViewController(withIdentifier: "DetailTripsViewController") as! DetailTripsViewController
+//        self.navigationController?.pushViewController(homeViewController, animated: true)
+    }
     
+    
+    
+    //    func tableView(_ tableView: UITableView, viewForHeaderInSection section: Int) -> UIView? {
+    //        <#code#>
+    //    }
+    //
+    //    func tableView(_ tableView: UITableView, heightForHeaderInSection section: Int) -> CGFloat {
+    //        <#code#>
+    //    }
 }
