@@ -79,6 +79,11 @@ extension HomeViewController: UITableViewDelegate, UITableViewDataSource {
         let trip = trips[indexPath.section][indexPath.row]
         cell.labelTrip.text = trip.labelTrip
         
+//        let startDate = String.convertDate(date: trip.startDate!)
+        let endDate = String.convertDate(dateString: trip.endDate)
+        let startDate = String.convertDate(dateString: trip.startDate)
+        cell.dateTrip.text = startDate + "->" + endDate
+        
         let imageURL = URL(string: trip.imageTrip ?? "https://is3-ssl.mzstatic.com/image/thumb/Purple113/v4/94/42/e3/9442e3d3-fb21-4bd3-7b21-cbd4e10d965f/AppIcon-0-1x_U007emarketing-0-0-GLES2_U002c0-512MB-sRGB-0-0-0-85-220-0-0-0-6.png/246x0w.jpg")
         cell.imageTrip.kf.setImage(
             with: imageURL,
@@ -93,20 +98,8 @@ extension HomeViewController: UITableViewDelegate, UITableViewDataSource {
     }
     
     func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
-        self.tabBarController?.selectedIndex = 2
-        
-//        let homeStoryboard = UIStoryboard.init(name: "Home", bundle: nil)
-//        let homeViewController = homeStoryboard.instantiateViewController(withIdentifier: "DetailTripsViewController") as! DetailTripsViewController
-//        self.navigationController?.pushViewController(homeViewController, animated: true)
+        let homeStoryboard = UIStoryboard.init(name: "Home", bundle: nil)
+        let homeViewController = homeStoryboard.instantiateViewController(withIdentifier: "TripsViewController") as! TripsViewController
+        self.navigationController?.pushViewController(homeViewController, animated: true)
     }
-    
-    
-    
-    //    func tableView(_ tableView: UITableView, viewForHeaderInSection section: Int) -> UIView? {
-    //        <#code#>
-    //    }
-    //
-    //    func tableView(_ tableView: UITableView, heightForHeaderInSection section: Int) -> CGFloat {
-    //        <#code#>
-    //    }
 }
