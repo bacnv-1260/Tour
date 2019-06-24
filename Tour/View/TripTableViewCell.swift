@@ -12,6 +12,7 @@ class TripTableViewCell: UITableViewCell {
     
     @IBOutlet weak var imageTrip: UIImageView!
     @IBOutlet weak var labelTrip: UILabel!
+    @IBOutlet weak var dateTrip: UILabel!
     
     override func awakeFromNib() {
         super.awakeFromNib()

@@ -33,4 +33,17 @@ extension String {
         }
         return false
     }
+    
+    static func convertDate(dateString: String?) -> String {
+        let dateFormatterGet = DateFormatter()
+        dateFormatterGet.dateFormat = "dd/MM/yyyy"
+        
+        let dateFormatterPrint = DateFormatter()
+        dateFormatterPrint.dateFormat = "dd/MM"
+        
+        guard  let dateString = dateString, let date = dateFormatterGet.date(from: dateString) else {
+            return ""
+        }
+        return dateFormatterPrint.string(from: date)
+    }
 }
