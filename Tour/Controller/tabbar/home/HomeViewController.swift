@@ -78,8 +78,6 @@ extension HomeViewController: UITableViewDelegate, UITableViewDataSource {
         // Fetches the appropriate meal for the data source layout.
         let trip = trips[indexPath.section][indexPath.row]
         cell.labelTrip.text = trip.labelTrip
-        
-//        let startDate = String.convertDate(date: trip.startDate!)
         let endDate = String.convertDate(dateString: trip.endDate)
         let startDate = String.convertDate(dateString: trip.startDate)
         cell.dateTrip.text = startDate + "->" + endDate
