@@ -16,6 +16,10 @@
 		A4B2307022A8C541008F16A7 /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = A4B2306F22A8C541008F16A7 /* GoogleService-Info.plist */; };
 		A4F0F4D522BC8C0E0089A38D /* DetailTripTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = A4F0F4D422BC8C0E0089A38D /* DetailTripTableViewCell.swift */; };
 		A4F0F4D722BC90810089A38D /* TripDetail.swift in Sources */ = {isa = PBXBuildFile; fileRef = A4F0F4D622BC90810089A38D /* TripDetail.swift */; };
+		DB9144E522D2020F009F4C3C /* TableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = DB9144E422D2020F009F4C3C /* TableViewCell.swift */; };
+		DB9144E722D20230009F4C3C /* CollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = DB9144E622D20230009F4C3C /* CollectionViewCell.swift */; };
+		DB9144EE22D31E3B009F4C3C /* HeaderTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = DB9144EC22D31E3B009F4C3C /* HeaderTableViewCell.swift */; };
+		DB9144EF22D31E3B009F4C3C /* HeaderTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = DB9144ED22D31E3B009F4C3C /* HeaderTableViewCell.xib */; };
 		DB9B5D3122B729C500441878 /* Home.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = DB9B5D3022B729C500441878 /* Home.storyboard */; };
 		DB9B5D3522B72A1900441878 /* HomeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = DB9B5D3422B72A1900441878 /* HomeViewController.swift */; };
 		DB9B5D3722B72F3D00441878 /* TripTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = DB9B5D3622B72F3D00441878 /* TripTableViewCell.swift */; };
@@ -46,6 +50,10 @@
 		A4F0F4D422BC8C0E0089A38D /* DetailTripTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DetailTripTableViewCell.swift; sourceTree = "<group>"; };
 		A4F0F4D622BC90810089A38D /* TripDetail.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TripDetail.swift; sourceTree = "<group>"; };
 		AE57CFCF29AF3F1D5CBF82E8 /* Pods-Tour.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Tour.release.xcconfig"; path = "Target Support Files/Pods-Tour/Pods-Tour.release.xcconfig"; sourceTree = "<group>"; };
+		DB9144E422D2020F009F4C3C /* TableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TableViewCell.swift; sourceTree = "<group>"; };
+		DB9144E622D20230009F4C3C /* CollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CollectionViewCell.swift; sourceTree = "<group>"; };
+		DB9144EC22D31E3B009F4C3C /* HeaderTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HeaderTableViewCell.swift; sourceTree = "<group>"; };
+		DB9144ED22D31E3B009F4C3C /* HeaderTableViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = HeaderTableViewCell.xib; sourceTree = "<group>"; };
 		DB9B5D3022B729C500441878 /* Home.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = Home.storyboard; sourceTree = "<group>"; };
 		DB9B5D3422B72A1900441878 /* HomeViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeViewController.swift; sourceTree = "<group>"; };
 		DB9B5D3622B72F3D00441878 /* TripTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TripTableViewCell.swift; sourceTree = "<group>"; };
@@ -144,6 +152,10 @@
 			isa = PBXGroup;
 			children = (
 				A4717C5422BBACF100DEDECA /* ProfileViewController.swift */,
+				DB9144E422D2020F009F4C3C /* TableViewCell.swift */,
+				DB9144E622D20230009F4C3C /* CollectionViewCell.swift */,
+				DB9144EC22D31E3B009F4C3C /* HeaderTableViewCell.swift */,
+				DB9144ED22D31E3B009F4C3C /* HeaderTableViewCell.xib */,
 			);
 			path = profile;
 			sourceTree = "<group>";
@@ -283,6 +295,7 @@
 				DB9B5D3122B729C500441878 /* Home.storyboard in Resources */,
 				A4B2307022A8C541008F16A7 /* GoogleService-Info.plist in Resources */,
 				FD5C7D2722A52DED00534FCF /* Assets.xcassets in Resources */,
+				DB9144EF22D31E3B009F4C3C /* HeaderTableViewCell.xib in Resources */,
 				FD5C7D2522A52DEA00534FCF /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -336,11 +349,14 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				DB9144EE22D31E3B009F4C3C /* HeaderTableViewCell.swift in Sources */,
 				A4717C5322BBACE400DEDECA /* NotificationViewController.swift in Sources */,
 				A4F0F4D522BC8C0E0089A38D /* DetailTripTableViewCell.swift in Sources */,
 				DB9B5D3B22B7359300441878 /* Trip.swift in Sources */,
 				DB9B5D4122B768CF00441878 /* StringExtension.swift in Sources */,
 				A4717C4D22BB9F7100DEDECA /* TabbarViewController.swift in Sources */,
+				DB9144E722D20230009F4C3C /* CollectionViewCell.swift in Sources */,
+				DB9144E522D2020F009F4C3C /* TableViewCell.swift in Sources */,
 				A4717C5122BBACD500DEDECA /* TripsViewController.swift in Sources */,
 				A4717C4F22BBACC500DEDECA /* InboxViewController.swift in Sources */,
 				A4717C5522BBACF100DEDECA /* ProfileViewController.swift in Sources */,
